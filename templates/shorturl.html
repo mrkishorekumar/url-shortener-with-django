@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Page</title>
+</head>
+<body>
+    <h1>URL Shortener</h1>
+    <p>Your Short URL for <b>{{longurl}}</b> is </p>
+    <br /><br />
+    <p id="shorturl"><span id="host"></span>/{{shorturl}}</p>
+    <button type="button" onclick="copy()">Copy</button>
+    <button type="button" onclick="open()">Open</button>
+    <script>
+        document.getElementById('host').innerHTML = document.location.host
+    </script>
+</body>
+</html>
